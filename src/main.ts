@@ -1,6 +1,12 @@
 /**
  * Created by sn on 2019/12/3.
  */
+
+import test from './modules/test';
+
+test.log();
+test.log2();
+
 function enumerable(value: boolean) {
     return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {
         console.log(descriptor);
